@@ -6,3 +6,6 @@ class Classname(object):
         print(x*y)
     def sum(self,x,y):
         print(x+y)
+class Classname2():
+    def sub(self,x,y):
+        print(x-y)
