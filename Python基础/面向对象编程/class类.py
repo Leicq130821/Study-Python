@@ -9,3 +9,8 @@ class Classname(object):
 class Classname2():
     def sub(self,x,y):
         print(x-y)
+# 使用type()函数可以创建类
+def sum(x,y):
+    print(x+y)
+Classname3=type('Classname3',(object,),dict(test=sum))
+Classname3.test(1,2)
