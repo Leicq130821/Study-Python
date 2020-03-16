@@ -44,3 +44,15 @@ except TypeError as E:
     print(E)
 finally:
     print('我最后执行，且一定会执行！')
+# 可以在except语句块后面加一个else，如果没有错误发生时，会执行else语句。
+try:
+    print('执行10除以2')
+    print(10/2)
+    print('执行5乘以2')
+    print(5*2)
+except Exception as E:
+    print(E)
+else:
+    print('try模块中没有发生错误，将会执行else模块。')
+finally:
+    print('我最后执行，且一定会执行！')
