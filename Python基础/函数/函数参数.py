@@ -10,10 +10,10 @@ test2(1,2,3)
 # 可变参数的函数，传入的参数个数是可以变的，函数接受到的参数是一个tuple元组，定义时只需要在参数名称前加*。
 # 可变参数的函数可以使用列表、元组、集合来作为参数，使用时只需要在列表元组集合前也加*即可。
 def test3(*number):
-  sum=0
-  for i in number:
-    sum=sum+pow(i,2)
-  print(sum)
+    sum=0
+    for i in number:
+        sum=sum+pow(i,2)
+    print(sum)
 test3(1,2,3,4)
 set={1,2,3,4}
 tuple=(1,2,3,4)
