@@ -11,7 +11,7 @@ print(jihe)
 # add(key)方法可以往集合中添加元素
 jihe.add('a')
 print(jihe)
-# update(x)方法,x可以多个用逗号隔开且x可以时元组、列表等
+# update(x)方法,x可以多个用逗号隔开且x可以是元组、列表等
 jihe.update(['g','h'],('i','j'))
 print(jihe)
 # remove(key)方法删除集合中的元素，若元素不存在则会报错
