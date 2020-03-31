@@ -1,5 +1,5 @@
 import logging
-logging.basicConfig(filename=r'D:\Python\Log.text',filemode='a',level=logging.DEBUG,
+logging.basicConfig(filename=r'D:\Python\Log.log',filemode='a',level=logging.DEBUG,
                     datefmt='%Y-%m-%d %H:%M:%S',format="%(asctime)s %(filename)s"
                     "[line:%(lineno)d]%(levelname)s%(message)s")
 logging.debug('debug message')
