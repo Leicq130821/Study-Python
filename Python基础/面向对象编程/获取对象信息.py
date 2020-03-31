@@ -1,20 +1,25 @@
-from Python基础.面向对象编程.class类 import Classname
-
-instance=Classname()
-# type()函数可以返回对象的基本属性。
-print(type(instance))
-# dir()函数可以返回对象的所有属性及方法。
-print(dir(instance))
-# hasattr()函数可以判断对象是否含有属性，返回的是布尔型。
-print(hasattr(instance,'shuxing'))
-print(hasattr(instance,'mult'))
-print(hasattr(instance,'sum'))
-# getattr()函数可以返回属性的值，如果属性是函数则返回函数本身。
-print(getattr(instance,'shuxing'))
-print(getattr(instance,'mult'))
-print(getattr(instance,'sum'))
-# setattr()函数给对象的属性赋值，如果属性不存在则添加属性，如果存在则改变属性的值。
-setattr(instance,'name','增加对象属性name')
-setattr(instance,'shuxing','改变了属性的值')
-print(getattr(instance,'name'))
-print(getattr(instance,'shuxing'))
+class Classname():
+    name='类的名称'
+    def mult(self,x,y):
+        return x*y
+    def sum(self,x,y):
+        return x+y
+    def pow(self,x,y):
+        return pow(x,y)
+Instance=Classname()
+# type(object)：获取对象的基本属性
+print(type(Instance))
+# dir(object)：获取对象的所有属性及方法
+print(dir(Instance))
+# hasattr(object,name)：判断对象是否有属性name，返回的结果是布尔型。
+print(hasattr(Instance,'name'))
+print(hasattr(Instance,'mult'))
+print(hasattr(Instance,'sum'))
+print(hasattr(Instance,'pow'))
+print(hasattr(Instance,'average'))
+# getattr(object,name,defaultvalue)：获取对象属性name的值，如果不存在属性name，则返回默认值。
+print(getattr(Instance,'mult',1))
+print(getattr(Instance,'name',1))
+# setattr(object,name,value)：设置对象的属性，如果对象不存在属性name则增加属性name，如果存在则更改属性name的值。
+setattr(Instance,'age',20)
+print(getattr(Instance,'age',10))

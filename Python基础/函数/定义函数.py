@@ -8,9 +8,9 @@ def test1(x):
 print(test1(-10))
 # 如果想定义一个什么事也不做的空函数，可以用pass语句。
 # pass作为占位符，比如没有想好的的函数代码可以先放一个pass，这样子不会影响到程序的执行。
-def PASS(x):
+def Pass(x):
     pass
-PASS(10)
+Pass(10)
 # 函数可以有多个返回值，返回值其实是一个tuple元组。
 def test2(x,y):
     return x+y,x*y
