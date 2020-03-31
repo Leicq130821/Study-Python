@@ -1,4 +1,4 @@
-# 当子类的方法与父类存在相同的方法时，子类的方法会覆盖父类的方法。
+# 当子类的方法与父类存在相同的方法时，子类的方法会覆盖父类的方法，这就是类的多态。
 from Python基础.面向对象编程.class类 import Classname
 
 class Jicheng(Classname):
