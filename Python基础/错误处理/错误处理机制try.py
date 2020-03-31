@@ -46,3 +46,4 @@ def main(x):
         print(E)
     finally:
         print('我最后执行')
+main(0)
