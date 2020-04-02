@@ -14,6 +14,7 @@ def func2(ProcessName):
 if __name__ == '__main__':
     Process1=Process(target=func1,args=('进程1',),name='进程1')
     Process2=Process(target=func2,args=('进程2',),name='进程2')
+    print(os.getpid())
     # 开始运行进程
     Process1.start()
     Process2.start()
