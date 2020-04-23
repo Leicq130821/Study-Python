@@ -1,6 +1,8 @@
 import os
 #getcwd()：获取执行该函数的文件所在目录的绝对路径。
 print(os.getcwd())
+# os.path.realpath(__file__):获取当前文件的绝对路径。
+print(os.path.realpath(__file__))
 # mkdir(path)：创建单级目录，需要保证path里父级目录必须存在且创建的目录不存在,否则将会报错。
 # rmdir(path)：删除单级目录，需要保证目录必须存在且为空目录，否则将会报错。
 os.mkdir(r'D:\Python\mkdir\dir')
