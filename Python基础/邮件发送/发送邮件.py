@@ -25,7 +25,7 @@ Smtp_port=25
 Smtp=SMTP(Smtp_server,Smtp_port)
 # 登录邮箱。
 User='2821644642@qq.com'
-Password='zlwmyfxysgjpdech'
+Password='acrcpkjqxbckdfbc'
 Smtp.login(User,Password)
 # 发送邮件。
 Smtp.sendmail(User, Receivers+Chaosongs, Email.as_string())
