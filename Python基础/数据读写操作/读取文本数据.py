@@ -4,6 +4,7 @@ print(file.read())
 file.close()
 # 每次读取一行数据。
 file=open(r'D:\Python\read.txt','r')
+print(file.readlines())
 print(file.readline())
 print(file.readline())
 print(file.readline())
